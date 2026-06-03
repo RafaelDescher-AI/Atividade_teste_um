@@ -7,12 +7,13 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $usuario = $_POST["usuario"];
         $senha = $_POST["senha"];
-        $sql = "INSERT INTO users (username, password) VALUES ('$usuario','$senha')";
+        $sql = "INSERT INTO users (username, password) VALUES ('$usuario','$senha')"; 
         if($conn -> query($sql) === TRUE){
             echo "<script>alert('Usuário Cadastrado com sucesso!')</script>";
         }else{
             echo "<script>alert('Erro Usuário Não Cadastrado!')</script>";
         }
+        // aqui é o codigo para adicionar usuário
     }
 ?>
 
@@ -24,6 +25,7 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
+    <!-- docs para -->
     <?php
         include("../public/component/navbar.php");
     ?>
@@ -44,6 +46,8 @@
         <br>
         <button type="submit">Cadastrar</button>
     </form>
+
+    <!-- visual para adicionar  -->
     <?php
     
     include("../public/component/table.php");
@@ -51,6 +55,8 @@
 
 
     <a href="logout.php">Sair</a>
+
+    <!-- botão de sair do loguin -->
     
 </body>
 </html>
