@@ -1,6 +1,6 @@
-CREATE DATABASE sistema_simples_rafael;
+CREATE DATABASE sistema_simples_rafa;
 
-USE sistema_simples_rafael;
+USE sistema_simples;
 
 CREATE TABLE usuario (
     id INT AUTO_INCREMENT PRIMARY KEY,
