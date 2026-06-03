@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $erro = "Usuário ou senha inválidos.";
     }
 }
-
+// é o sistema de login de usuario, onde ele ja puxa do db connect a parte da session start, e ele só adiciona no banco
 ?>
 
 <html lang="en">
@@ -31,6 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Login com PHP</title>
 </head>
 <body>
+    <!-- docs -->
      <?php
     include("public/component/table.php");
     ?>
@@ -45,6 +46,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <br>
         <?php
 
+// parte de colocar os dados que são puxados ali antes
             if(isset($erro)){
                 echo $erro;
             }
