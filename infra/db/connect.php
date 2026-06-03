@@ -14,3 +14,4 @@
          echo ("<p> BD: ok </p>");
      }
 ?>
+<!-- responsável por iniciar a sessçao e verificar se a conecção está de acordo, alem -->

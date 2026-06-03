@@ -27,5 +27,6 @@
     }
     
     ?>
+    <!-- tabela que mostra os usuarios cadastrados no banco de dados -->
 
 </table>

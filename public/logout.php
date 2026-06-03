@@ -4,3 +4,5 @@
     header("Location: ../index.php");
     exit();
 ?>
+
+<!-- codigo para sair do site -->
